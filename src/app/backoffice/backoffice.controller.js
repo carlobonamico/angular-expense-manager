@@ -6,7 +6,10 @@
     .controller('BackofficeController', BackofficeController);
 
   /** @ngInject */
-  function BackofficeController() {
+  function BackofficeController(expensesService) {
+    
+    this.expenses = expensesService.getExpenses(); 
+    
     this.message = "test backoffice";
     
   }

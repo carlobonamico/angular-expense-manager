@@ -15,3 +15,7 @@
 <h1>backoffice home</h1>
 
 <h2>Msg: {{backofficeCtrl.message}}</h2>
+<pre>{{backofficeCtrl.expenses}}</pre>
+Datatable:
+<datatable data="backofficeCtrl.expenses" 
+    on-selected="backofficeCtrl.showDetails()"></datatable>

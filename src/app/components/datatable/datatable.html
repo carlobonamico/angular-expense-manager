@@ -1,0 +1,20 @@
+<h2>Datatable component</h2>
+<style>
+	.selClass {
+		background-color : yellow
+	}
+	
+</style>
+	
+	Selected: {{vm.selected}}
+<table border="1">
+	<tr ng-repeat="item in vm.items"
+		 ng-click="vm.select(item)"
+		 ng-class="{'selClass' : vm.isSelected(item)}"
+		 >
+		<td ng-repeat="(key,value) in item">
+			<span >{{value}}</span>
+		</td>
+		<td><pre>{{item | json}}</pre></td>
+	</tr>
+</table>

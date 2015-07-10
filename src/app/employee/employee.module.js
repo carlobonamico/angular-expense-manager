@@ -4,6 +4,7 @@
     console.log("dichiarazione modulo employee");
     
   angular
-    .module('angular.expense.manager.employee', ['ngResource', 'ui.router']);
+    .module('angular.expense.manager.employee', 
+      ['ngResource', 'ui.router', "angular.common.datatable"]);
 
 })();

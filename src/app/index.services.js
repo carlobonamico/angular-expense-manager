@@ -36,7 +36,11 @@
     };
     
     this.getExpensesForEmployee = function (employee){
-      return expenses; 
+      var result = expenses.filter(function (item){
+        return item.employee == employee;
+      });
+      
+      return result; 
     };
   }
 

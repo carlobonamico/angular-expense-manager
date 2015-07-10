@@ -31,6 +31,8 @@ module.exports = function(config) {
 
     autoWatch: false,
 
+  reporters : ['progress','html'],
+
     frameworks: ['jasmine', 'angular-filesort'],
 
     angularFilesort: {

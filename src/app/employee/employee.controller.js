@@ -6,7 +6,10 @@
     .controller('EmployeeController', EmployeeController);
 
   /** @ngInject */
-  function EmployeeController() {
+  function EmployeeController(expensesService) {
+    
+    this.expenses = expensesService.getExpensesForEmployee('carlo'); 
+    
     this.message = "test";
     
   }
